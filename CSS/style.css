@@ -1,0 +1,161 @@
+img{
+    position: relative;
+    size: cover;
+    height: 450px;
+}
+.bg
+{
+    background-color: rgb(18, 131, 224);
+    color: black;
+}
+
+
+a{
+    color: rgb(226, 26, 26);
+}
+
+
+.heading
+{
+    margin-top: 30px;
+    text-align: center;
+}
+.paragraph{
+    text-align: center;
+    font-style: arial;
+    font-size: 20px;
+    
+}
+/* Custom styles for course cards */
+.coursecards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+.coursecards
+{
+    display: flex;
+    /* justify-content: center; */
+    gap: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.img
+{
+    height: 180px;
+}
+.btn
+{
+    background-color: rgb(130, 130, 251);
+    color: azure;
+} 
+
+/* .custom-nav{
+    gap: 110px;
+    height: 30px;
+}
+.home{
+   position: absolute;
+    left: 50px;
+} */
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+   font-family: montserrat;
+}
+
+nav {
+  background-color:rgb(18, 131, 224);
+  height: 60px;
+  width: 100%;
+}
+
+label.logo{
+  color: white;
+  font-size: 25px;
+  line-height: 60px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+ }
+
+nav ul li{
+   display: inline-block;
+   line-height: 60px;
+   margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+} 
+
+.contact-us {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  transition: bottom 0.5s ease;
+}
+
+.contact-us.active {
+  bottom: 0;
+}
+

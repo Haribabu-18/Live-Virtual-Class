@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link href="./CSS/test.css" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">ONLINE EDU</label>
+        <ul>
+          <li><a href="./index.html"#>Home</a></li>
+        <li><a href=""#>All Courses</a></li>
+        <li><a id="modelbtn"type="button" class="nav-link" data-toggle="modal" data-target="#exampleModal"> MIS</a></li>
+        <li><a href=""#>Online Test</a></li>
+        <li><a href="./salary.html">Salary</a></li>
+        <li><a href=""#>Contact Us</a></li>
+        </ul>
+    </nav>
+  <div class="question">
+    <h3>Question 1:</h3>
+    <p>What is the capital of France?</p>
+    <ul>
+      <li><input type="radio" name="q1" value="a"> a) London</li>
+      <li><input type="radio" name="q1" value="b"> b) Berlin</li>
+      <li><input type="radio" name="q1" value="c"> c) Paris</li>
+      <li><input type="radio" name="q1" value="d"> d) Madrid</li>
+    </ul>
+    <h3>Question 2:</h3>
+    <p>What is the capital of India?</p>
+    <ul>
+      <li><input type="radio" name="q2" value="a"> a) Delhi</li>
+      <li><input type="radio" name="q2" value="b"> b) Gujarat</li>
+      <li><input type="radio" name="q2" value="c"> c) Andhra</li>
+      <li><input type="radio" name="q2" value="d"> d) Hyderabad</li>
+    </ul>
+    <button onclick="calculateMarks()">Calculate Total Marks</button>
+    <p>Total Marks: <span id="totalMarks">0</span></p>
+  </div>
+
+  <script>
+    function calculateMarks() {
+      let totalMarks = 0;
+
+      // Question 1
+      let q1Answer = document.querySelector('input[name="q1"]:checked');
+      if (q1Answer && q1Answer.value === 'c') {
+        totalMarks += 1;
+      }
+
+      // Question 2
+      let q2Answer = document.querySelector('input[name="q2"]:checked');
+      if (q2Answer && q2Answer.value === 'a') {
+        totalMarks += 1;
+      }
+
+      document.getElementById('totalMarks').textContent = totalMarks;
+    }
+  </script>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">&copy; 2024 Live Online Classes</span>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
